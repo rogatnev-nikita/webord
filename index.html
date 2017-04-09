@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Дизайн и разработка профессиональных сайтов | Интернет-агентство webord</title>
+    <meta name="description" content="Мы умеем разрабатывать интерфейсы и посадочные, пойдём на эксперимент и с той же хваткой возьмёмся за типовую задачу. Дело не в этом. Для успеха агентского опыта мало — нужны ваши знания. Участвуйте, доверяйте, и всё получится.">
+    <meta name="keywords" content="">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+    <!-- PRELOADER -->
+    <div id="hellopreloader">
+        <div class="preloader" id="preloader"></div>
+    </div>
+    <!-- PRELOADER END -->
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__container">
+            <div class="logo">
+                <a href="./">
+                    <img src="./img/logo/logo.svg" alt="logo" width="152" height="40">
+                </a>
+            </div>
+            <div class="header__burger"><a href="#"><i></i></a></div>
+            <nav class="header__navigation">
+                <ul>
+                    <li><a href="./landing.php">Лендинги</a></li>
+                    <li><a href="./promo.php">Промо-сайты</a></li>
+                    <li><a href="./vizitka.php">Сайты-визитки</a></li>
+                    <li><a href="./corporate.php">Корпоративные</a></li>
+                    <li><a href="./shop.php">Интернет-магазины</a></li>
+                    <li><a href="./portal.php">Порталы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- PROMO -->
+    <section class="promo">
+        <div class="promo__container">
+            <h1>СОЗДАЕМ САЙТЫ И ВЕБ-СЕРВИСЫ</h1>
+            <p>Мы являемся интернет-агентством полного цикла со своим штатом специалистов. Профессионально решаем задачи любого уровня сложности. Логотипы и веб-дизайн, корпоративные сайты и интернет-магазины, лэндинги и мобильные приложения, seo продвижение
+                и контекстная реклама.</p>
+            <a href="#">БЕСПЛАТНАЯ ОЦЕНКА ВАШЕГО ПРОЕКТА</a>
+        </div>
+    </section>
+    <!-- PROMO END -->
+
+    <!-- SERVICES -->
+    <section class="services">
+        <div class="services__container">
+            <h1>Мы разрабатываем</h1>
+            <p>Мы умеем разрабатывать интерфейсы и посадочные, пойдём на эксперимент и с той же хваткой возьмёмся за типовую задачу. Дело не в этом. Для успеха агентского опыта мало — нужны ваши знания. Участвуйте, доверяйте, и всё получится.</p>
+        </div>
+    </section>
+    <!-- SERVICES END -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__copyright">
+                <p>&copy; 2017 webord. Design by <a href="http://rogatnev.ru/">Rogatnev Studio</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- SCRIPTS -->
+    <script>
+var hellopreloader = document.getElementById("preloader");
+
+function fadeOutnojquery(el) {
+    el.style.opacity = 1;
+    var interhellopreloader = setInterval(function() {
+        el.style.opacity = el.style.opacity - 0.05;
+        if (el.style.opacity <= 0.05) {
+            clearInterval(interhellopreloader);
+            hellopreloader.style.display = "none";
+        }
+    }, 16);
+}
+window.onload = function() {
+    setTimeout(function() {
+        fadeOutnojquery(hellopreloader);
+    }, 1000);
+};
+    </script>
+    <!-- SCRIPTS END -->
+
+</body>
+
+</html>

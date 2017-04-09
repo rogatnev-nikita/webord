@@ -1,0 +1,47 @@
+/* ------------------------------------------ */
+/* HEADER BLOCK
+/* ------------------------------------------ */
+.header {
+	position: fixed;
+	z-index: 300;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+
+	transition: all 0.2s ease-out;
+
+	outline: 1px solid red;
+	background: #000000;
+
+	.container();
+
+	&__container {
+		padding: 10px 0;
+
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.header__navigation {
+	width: 75%;
+
+	font-size: 12px;
+
+	ul {
+		display: flex;
+
+		outline: 1px solid blue;
+
+		justify-content: space-between;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+	a {
+		text-transform: uppercase;
+	}
+}

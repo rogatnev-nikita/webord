@@ -1,0 +1,23 @@
+// ------------------------------------------ //
+// MIXINS
+// ------------------------------------------ //
+.container {
+	&__container {
+		display: flex;
+
+		width: 100%;
+		margin: 0 auto;
+		padding: 15px;
+
+		outline: 1px dashed lightgrey;
+
+		@media (min-width: @tablet-widths) {
+			max-width: @tablet-widths;
+			padding: 0;
+		}
+
+		@media (min-width: @desktop-widths) {
+			max-width: @desktop-widths;
+		}
+	}
+}
