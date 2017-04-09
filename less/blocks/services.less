@@ -18,22 +18,30 @@
 	&__container {
 		display: block;
 	}
+}
 
-	h1 {
-		margin-bottom: 20px;
+.services__items {
+	display: flex;
 
-		text-transform: uppercase;
+	margin-bottom: 20px;
 
-		font-size: 26px;
-		font-weight: 400;
-		line-height: 1;
-	}
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 
-	p {
-		display: block;
+.services__item {
+	position: relative;
 
-		font-size: 17px;
-		font-weight: 200;
-		line-height: 24px;
-	}
+	width: 100%;
+	margin-bottom: 40px;
+	padding: 40px 20px;
+
+	transition: all 0.2s ease-out;
+	text-align: center;
+
+	border-top: 3px solid #5f6c77;
+	background: #ffffff;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+
+	flex-basis: 30%;
 }
