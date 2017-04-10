@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 2193.2 630.1" style="enable-background:new 0 0 2193.2 630.1;" xml:space="preserve">
+	 viewBox="0 0 2070.4 485.9" style="enable-background:new 0 0 2070.4 485.9;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{fill:#E3BD4F;}
+	.st1{fill:#EF2D56;}
 	.st2{fill:none;}
 	.st3{font-family:'Evolventa-Regular';}
 	.st4{font-size:356px;}
 	.st5{fill:none;stroke:#242121;stroke-width:2;stroke-miterlimit:10;}
 	.st6{fill:none;stroke:#E3BD4F;stroke-width:2;stroke-miterlimit:10;}
 </style>
-<polygon class="st0" points="549,234.6 549,559.6 73.9,558.6 549,82.7 549,201.4 286.1,464.3 453.7,464.3 453.7,329.9 "/>
-<polygon class="st1" points="388.1,73.7 63.1,73.7 64.1,548.8 540,73.7 421.3,73.7 158.4,336.6 158.4,169 292.8,169 "/>
-<rect x="618" y="197" class="st2" width="3575.7" height="725.1"/>
-<rect x="618" y="197" class="st2" width="736.7" height="348.5"/>
-<text transform="matrix(1 0 0 1 618.0424 439.2782)" class="st0 st3 st4">WEB</text>
-<rect x="617" y="195" class="st2" width="738.7" height="351.5"/>
-<text transform="matrix(1 0 0 1 617.0424 437.2782)" class="st5 st3 st4">WEB</text>
-<rect x="1354.7" y="192.3" class="st2" width="790" height="353.2"/>
-<text transform="matrix(1 0 0 1 1354.7424 434.579)" class="st1 st3 st4">ORD</text>
-<rect x="1353.7" y="190.3" class="st2" width="792" height="356.2"/>
-<text transform="matrix(1 0 0 1 1353.7424 432.579)" class="st6 st3 st4">ORD</text>
+<polygon class="st0" points="485.9,160.9 485.9,485.9 10.8,484.9 485.9,9 485.9,127.7 223,390.6 390.6,390.6 390.6,256.2 "/>
+<polygon class="st1" points="325,0 0,0 1,475.1 476.9,0 358.2,0 95.3,262.9 95.3,95.3 229.7,95.3 "/>
+<rect x="554.9" y="123.3" class="st2" width="3575.7" height="725.1"/>
+<rect x="554.9" y="123.3" class="st2" width="736.7" height="348.5"/>
+<text transform="matrix(1 0 0 1 554.9424 365.5782)" class="st0 st3 st4">WEB</text>
+<rect x="553.9" y="121.3" class="st2" width="738.7" height="351.5"/>
+<text transform="matrix(1 0 0 1 553.9424 363.5782)" class="st5 st3 st4">WEB</text>
+<rect x="1291.6" y="118.6" class="st2" width="790" height="353.2"/>
+<text transform="matrix(1 0 0 1 1291.6425 360.879)" class="st1 st3 st4">ORD</text>
+<rect x="1290.6" y="116.6" class="st2" width="792" height="356.2"/>
+<text transform="matrix(1 0 0 1 1290.6425 358.879)" class="st6 st3 st4">ORD</text>
 </svg>

@@ -1,7 +1,7 @@
 /* ------------------------------------------ */
-/* SERVICES BLOCK
+/* MORE BLOCK
 /* ------------------------------------------ */
-.services {
+.more {
 	display: flex;
 
 	text-align: center;
@@ -19,14 +19,14 @@
 	}
 }
 
-.services__items {
+.more__items {
 	display: flex;
 
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.services__item {
+.more__item {
 	position: relative;
 
 	display: flex;
@@ -48,6 +48,15 @@
 		flex-grow: 1;
 	}
 
+	span {
+		display: block;
+
+		color: #999999;
+
+		font-size: 12px;
+		font-weight: normal;
+	}
+
 	&:hover {
 		box-shadow: 2px 2px 20px rgba(104, 104, 104, 0.2);
 	}
@@ -59,8 +68,18 @@
 	}
 
 	@media (min-width: @desktop-widths) {
-		margin: 15px 0;
+		flex-basis: calc(~"50% - 45px");
 
-		flex-basis: calc(~"100% / 3 - 15px");
+		&:nth-child(odd) {
+			padding-right: 150px;
+
+			text-align: right;
+		}
+
+		&:nth-child(even) {
+			padding-left: 150px;
+
+			text-align: left;
+		}
 	}
 }
