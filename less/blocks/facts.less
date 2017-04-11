@@ -1,28 +1,23 @@
 /* ------------------------------------------ */
-/* SERVICES BLOCK
+/* FACTS BLOCK
 /* ------------------------------------------ */
-.services {
-	display: flex;
-
+.facts {
 	.light();
-	align-items: center;
 	.container();
 
 	&__container {
-		display: block;
-
-		padding-bottom: 45px;
+		flex-direction: column;
 	}
 }
 
-.services__items {
+.facts__items {
 	display: flex;
 
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.services__item {
+.facts__item {
 	position: relative;
 
 	display: flex;
@@ -38,17 +33,7 @@
 	background: #fafafa;
 	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 
-	h1 {
-		font-size: 18px;
-	}
-
-	p {
-		flex-grow: 1;
-	}
-
-	&:hover {
-		box-shadow: 2px 2px 20px rgba(104, 104, 104, 0.2);
-	}
+	align-items: center;
 
 	@media (min-width: @tablet-widths) {
 		margin: 15px 0;
@@ -57,7 +42,7 @@
 	}
 
 	@media (min-width: @desktop-widths) {
-		margin: 15px 0;
+		flex-basis: calc(~"50% - 45px");
 
 		&:nth-child(odd) {
 			padding-right: 150px;

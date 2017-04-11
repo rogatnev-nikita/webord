@@ -2,32 +2,20 @@
 /* HEADER BLOCK
 /* ------------------------------------------ */
 .header {
-	position: fixed;
-	z-index: 300;
-	top: 0;
-	left: 0;
-
 	width: 100%;
 
 	transition: all 0.2s ease-out;
 
-	background: #000000;
-
 	.container();
 
 	&__container {
-		padding: 10px 0;
-
-		justify-content: space-between;
 		align-items: center;
+		justify-content: space-between;
 	}
 }
 
 .header__navigation {
-	width: 75%;
 	padding: 0 15px;
-
-	font-size: 12px;
 
 	ul {
 		position: absolute;
@@ -41,8 +29,6 @@
 		width: 100%;
 		padding: 0;
 
-		background: #000000;
-
 		@media (min-width: @desktop-widths) {
 			position: inherit;
 
@@ -54,7 +40,7 @@
 
 	li {
 		width: 100%;
-		padding: 15px 0;
+		padding: 15px;
 
 		list-style-type: none;
 
@@ -62,7 +48,6 @@
 
 		@media (min-width: @desktop-widths) {
 			width: auto;
-			padding: 0;
 
 			text-align: right;
 		}
