@@ -43,8 +43,12 @@
                     <img src="./img/logo/logo.svg" alt="logo" width="152" height="40">
                 </a>
             </div>
-            <div class="header__burger"><a href="#"><i></i></a></div>
-            <nav class="header__navigation">
+            <button class="hamburger hamburger--collapse" type="button">
+              <span class="hamburger__box">
+                <span class="hamburger__inner"></span>
+              </span>
+            </button>
+            <nav class="header__navigation header__navigation--closed">
                 <ul>
                     <li><a href="./landing.php">Лендинги</a></li>
                     <li><a href="./promo.php">Промо-сайты</a></li>
@@ -60,8 +64,11 @@
 
     <!-- PROMO -->
     <section class="promo">
+        <video class="promo__video" preload="auto" loop="" autoplay="">
+          <source type="video/webm" src="http://utilitynyc.com/wp-content/uploads/2013/09/utility-4.mp4">
+          <source type="video/mp4" src="http://utilitynyc.com/wp-content/uploads/2013/09/utility-4.mp4">
+        </video>
         <div class="promo__container">
-
             <div class="promo__text">
                 <h1>Создаём хорошее и развиваем до лучшего. Боремся за пользу и здравый смысл.</h1>
                 <span>Санкт-Петербург, Москва</span>
@@ -269,6 +276,63 @@
 
     <!-- SCRIPTS -->
     <script>
+var hamburger = document.querySelector(".hamburger"); // .hamburger__active
+var navigation = document.querySelector(".header__navigation");
+
+var navigationClosed = document.querySelector(".header__navigation--closed");
+var navigationOpened = document.querySelector(".header__navigation--opened");
+
+var body = document.querySelector("body");
+var header = document.querySelector(".header");
+
+hamburger.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    if (navigation.classList.contains("header__navigation--closed")) {
+        hamburger.classList.add("hamburger__active");
+        navigation.classList.remove("header__navigation--closed");
+        navigation.classList.add("header__navigation--opened");
+        header.classList.remove("header--bg");
+        body.classList.add("body--fixed");
+    } else {
+        hamburger.classList.remove("hamburger__active");
+        navigation.classList.add("header__navigation--closed");
+        navigation.classList.remove("header__navigation--opened");
+        header.classList.add("header--bg");
+        body.classList.remove("body--fixed");
+    };
+});
+
+
+
+var scrollpos = window.scrollY;
+
+
+function add_class_on_scroll() {
+    header.classList.add("header--bg");
+}
+
+function remove_class_on_scroll() {
+    header.classList.remove("header--bg");
+}
+
+window.addEventListener('scroll', function() {
+    scrollpos = window.scrollY;
+
+    if (scrollpos > 400) {
+        add_class_on_scroll();
+    } else {
+        remove_class_on_scroll();
+    }
+});
+
+
+
+
+
+
+
+
 var hellopreloader = document.getElementById("preloader");
 
 function fadeOutnojquery(el) {
