@@ -1,5 +1,7 @@
 # webord
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rogatnev-nikita/webord.svg)](https://greenkeeper.io/)
+
 [![Build status][travis-image]][travis-url]
 
 ## Project summary
