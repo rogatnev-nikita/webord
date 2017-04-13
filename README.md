@@ -1,7 +1,6 @@
-# webord
+# webord.github.io
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/rogatnev-nikita/webord.svg)](https://greenkeeper.io/)
-
+[![Greenkeeper badge](https://badges.greenkeeper.io/rogatnev-nikita/webord.github.io.svg)](https://greenkeeper.io/)
 [![Build status][travis-image]][travis-url]
 
 ## Project summary
@@ -16,5 +15,5 @@
 	npm i  
 	npm run build
 
-[travis-image]: https://travis-ci.org/rogatnev-nikita/webord.github.io.svg?branch=master
-[travis-url]: https://travis-ci.org/rogatnev-nikita/webord.github.io
+[travis-image]: https://travis-ci.org/rogatnev-nikita/webord.github.io.github.io.svg?branch=master
+[travis-url]: https://travis-ci.org/rogatnev-nikita/webord.github.io.github.io

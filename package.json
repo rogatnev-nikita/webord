@@ -1,18 +1,18 @@
 {
-    "name": "webord",
+    "name": "webord.github.io",
     "version": "0.1.0",
-    "description": "webord",
+    "description": "webord.github.io",
     "author": "Rogatnev Nikita",
     "repository": {
         "type": "git",
-        "url": "git@github.com:rogatnev-nikita/webord.git"
+        "url": "git@github.com:rogatnev-nikita/webord.github.io.git"
     },
 
     "bugs": {
-        "url": "https://github.com/rogatnev-nikita/webord/issues"
+        "url": "https://github.com/rogatnev-nikita/webord.github.io/issues"
     },
 
-    "homepage": "https://github.com/rogatnev-nikita/webord",
+    "homepage": "https://github.com/rogatnev-nikita/webord.github.io",
 
     "devDependencies": {
         "editorconfig-tools": "^0.1.1",
