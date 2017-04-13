@@ -1,8 +1,10 @@
 /* ------------------------------------------ */
-/* SERVICES BLOCK
+/* MORE BLOCK
 /* ------------------------------------------ */
-.services {
+.more {
 	display: flex;
+
+	background: #f9f9f9;
 
 	.light();
 	align-items: center;
@@ -15,14 +17,14 @@
 	}
 }
 
-.services__items {
+.more__items {
 	display: flex;
 
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.services__item {
+.more__item {
 	position: relative;
 
 	display: flex;
@@ -38,12 +40,17 @@
 	background: #fafafa;
 	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 
-	h1 {
-		font-size: 18px;
-	}
+	align-items: center;
 
 	p {
 		flex-grow: 1;
+	}
+
+	span {
+		color: #999999;
+
+		font-size: 12px;
+		font-weight: normal;
 	}
 
 	&:hover {
@@ -57,8 +64,6 @@
 	}
 
 	@media (min-width: @desktop-widths) {
-		margin: 15px 0;
-
 		&:nth-child(odd) {
 			padding-right: 150px;
 

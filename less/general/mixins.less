@@ -7,17 +7,35 @@
 
 		width: 100%;
 		margin: 0 auto;
-		padding: 15px;
-
-		outline: 1px dashed lightgrey;
+		padding: 30px 15px;
 
 		@media (min-width: @tablet-widths) {
-			max-width: @tablet-widths;
-			padding: 0;
+			padding: 60px 15px;
 		}
 
 		@media (min-width: @desktop-widths) {
-			max-width: @desktop-widths;
+			padding: 60px 30px;
+		}
+
+		& > p {
+			@media (min-width: @desktop-widths) {
+				width: 50%;
+			}
 		}
 	}
+}
+
+.light {
+	color: rgba(0, 0, 0, 0.5);
+	background: #ffffff;
+}
+
+.light-grey {
+	color: rgba(0, 0, 0, 0.5);
+	background: #f2f2f2;
+}
+
+.dark {
+	color: rgba(255, 255, 255, 0.5);
+	background: #000000;
 }

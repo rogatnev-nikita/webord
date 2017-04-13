@@ -1,0 +1,29 @@
+/* ------------------------------------------ */
+/* CLIENTS BLOCK
+/* ------------------------------------------ */
+.clients {
+	.light-grey();
+	.container();
+
+	&__container {
+		flex-direction: column;
+	}
+}
+
+.clients__items {
+	display: flex;
+
+	flex-wrap: wrap;
+
+	@media (min-width: @tablet-widths) {
+		flex-wrap: nowrap;
+	}
+}
+
+.clients__item {
+	width: 100%;
+
+	@media (min-width: @tablet-widths) {
+		max-width: 50%;
+	}
+}
