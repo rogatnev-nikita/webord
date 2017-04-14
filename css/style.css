@@ -12,6 +12,7 @@
 }
 @media (min-width: 1200px) {
   .container__container {
+    max-width: 1400px;
     padding: 60px 30px;
   }
 }
@@ -227,6 +228,7 @@ a:active {
 }
 @media (min-width: 1200px) {
   .header__container {
+    max-width: 1400px;
     padding: 60px 30px;
   }
 }
@@ -481,6 +483,7 @@ a:active {
 }
 @media (min-width: 1200px) {
   .cta__container {
+    max-width: 1400px;
     padding: 60px 30px;
   }
 }
@@ -544,6 +547,7 @@ a:active {
 }
 @media (min-width: 1200px) {
   .promo__container {
+    max-width: 1400px;
     padding: 60px 30px;
   }
 }
@@ -628,6 +632,7 @@ a:active {
 }
 @media (min-width: 1200px) {
   .services__container {
+    max-width: 1400px;
     padding: 60px 30px;
   }
 }
@@ -759,6 +764,7 @@ a:active {
 }
 @media (min-width: 1200px) {
   .more__container {
+    max-width: 1400px;
     padding: 60px 30px;
   }
 }
@@ -873,6 +879,7 @@ a:active {
 }
 @media (min-width: 1200px) {
   .clients__container {
+    max-width: 1400px;
     padding: 60px 30px;
   }
 }
@@ -930,6 +937,7 @@ a:active {
 }
 @media (min-width: 1200px) {
   .facts__container {
+    max-width: 1400px;
     padding: 60px 30px;
   }
 }
@@ -1057,6 +1065,7 @@ a:active {
 }
 @media (min-width: 1200px) {
   .projects__container {
+    max-width: 1400px;
     padding: 60px 30px;
   }
 }
@@ -1113,6 +1122,7 @@ a:active {
 }
 @media (min-width: 1200px) {
   .brief__container {
+    max-width: 1400px;
     padding: 60px 30px;
   }
 }
@@ -1145,6 +1155,7 @@ a:active {
 }
 @media (min-width: 1200px) {
   .footer__container {
+    max-width: 1400px;
     padding: 60px 30px;
   }
 }

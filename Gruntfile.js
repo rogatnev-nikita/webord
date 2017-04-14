@@ -5,6 +5,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-less");
     grunt.loadNpmTasks("grunt-postcss");
     grunt.loadNpmTasks("grunt-cssnano");
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
     grunt.initConfig({
 
@@ -31,10 +32,18 @@ module.exports = function (grunt) {
                 src: "css/style.css",
                 dest: "css/style.min.css"
             }
+        },
+
+        uglify: {
+            my_target: {
+                files: {
+                    'js/script.min.js': ['js/script.js']
+                }
+            }
         }
 
     });
 
-    grunt.registerTask("default", ["less", "postcss"]);
+    grunt.registerTask("default", ["less", "postcss", "uglify"]);
 
 };
