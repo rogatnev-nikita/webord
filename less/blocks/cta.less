@@ -10,6 +10,36 @@
 	.container();
 
 	h2 {
-		font-size: 2em;
+		width: 100%;
+
+		font-size: 1.5em;
+
+		@media (min-width: @tablet-widths) {
+			max-width: 75%;
+		}
+
+		@media (min-width: @desktop-widths) {
+			font-size: 2em;
+		}
+	}
+
+	&__container {
+		flex-direction: column;
+
+		align-items: center;
+
+		@media (min-width: @tablet-widths) {
+			flex-direction: row;
+		}
+	}
+
+	.cta__btn {
+		width: 100%;
+
+		text-align: center;
+
+		@media (min-width: @tablet-widths) {
+			max-width: 25%;
+		}
 	}
 }
