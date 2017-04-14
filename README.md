@@ -1,4 +1,4 @@
-# webord.github.io
+# «WEBORD» Digital Agency
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/rogatnev-nikita/webord.github.io.svg)](https://greenkeeper.io/)
 [![Build status][travis-image]][travis-url]
