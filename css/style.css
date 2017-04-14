@@ -148,6 +148,61 @@ a:active {
   background-size: 41px;
 }
 /* ------------------------------------------ */
+/* BTN BLOCK
+/* ------------------------------------------ */
+.btn {
+  position: relative;
+  display: inline-block;
+  min-width: 160px;
+  height: 40px;
+  margin-top: 15px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0 14px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  background: #eabf44;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 40px;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  overflow-wrap: normal;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.btn:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+  transition-property: transform, opacity, box-shadow;
+  transform: translate3d(0);
+  opacity: 0;
+  border: 1px solid #eabf44;
+}
+.btn:hover {
+  opacity: 1;
+  color: #ffffff;
+  background-color: #eabf44;
+  box-shadow: 5px 5px rgba(234, 191, 68, 0.5);
+}
+.btn:hover:before {
+  transform: translate3d(-5px, -5px, 0);
+  opacity: 1;
+}
+/* ------------------------------------------ */
 /* HEADER BLOCK
 /* ------------------------------------------ */
 .header {
@@ -434,6 +489,31 @@ a:active {
     width: calc(50% - 15px);
   }
 }
+.cta h2 {
+  font-size: 2em;
+}
+/* ------------------------------------------ */
+/* PARTICLE SLIDER BLOCK
+/* ------------------------------------------ */
+.particle-slider {
+  position: relative;
+  width: 100%;
+}
+.particle-slider:after {
+  display: block;
+  padding-bottom: 100%;
+  content: "";
+}
+.particle-slider #particle-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 675px) {
+  .particle-slider {
+    width: 47.5%;
+  }
+}
 /* ------------------------------------------ */
 /* PROMO BLOCK
 /* ------------------------------------------ */
@@ -471,12 +551,20 @@ a:active {
     width: calc(50% - 15px);
   }
 }
-@media (min-width: 1200px) {
+.promo__container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+@media (min-width: 675px) {
   .promo__container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: end;
-        justify-content: flex-end;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
   }
 }
 .promo .promo__video {
@@ -490,18 +578,29 @@ a:active {
   min-height: 100%;
   transform: translateX(-50%) translateY(-50%);
 }
-@media (min-width: 1200px) {
+.promo .promo__text {
+  width: 100%;
+}
+@media (min-width: 675px) {
   .promo .promo__text {
-    width: 50%;
+    width: 47.5%;
   }
 }
 .promo h1 {
   margin-bottom: 20px;
-  font-size: 2.5em;
+  font-size: 1.5em;
+}
+@media (min-width: 1200px) {
+  .promo h1 {
+    font-size: 2.5em;
+  }
 }
 .promo span {
   font-size: 17px;
   line-height: 24px;
+}
+.promo p {
+  padding: 0;
 }
 /* ------------------------------------------ */
 /* SERVICES BLOCK
@@ -636,9 +735,6 @@ a:active {
 }
 /* ------------------------------------------ */
 /* MORE BLOCK
-/* ------------------------------------------ */
-/* ------------------------------------------ */
-/* more BLOCK
 /* ------------------------------------------ */
 .more {
   display: -ms-flexbox;
@@ -991,6 +1087,41 @@ a:active {
   .projects__item {
     max-width: 50%;
   }
+}
+/* ------------------------------------------ */
+/* BRIEF BLOCK
+/* ------------------------------------------ */
+.brief {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 45px 0;
+  color: rgba(255, 255, 255, 0.5);
+  background: #000000;
+}
+.brief__container {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+@media (min-width: 675px) {
+  .brief__container {
+    padding: 60px 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .brief__container {
+    padding: 60px 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .brief__container > p {
+    width: calc(50% - 15px);
+  }
+}
+.brief h2 {
+  font-size: 2em;
 }
 /* ------------------------------------------ */
 /* FOOTER BLOCK

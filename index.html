@@ -23,6 +23,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -65,13 +69,21 @@
     <!-- PROMO -->
     <section class="promo">
         <video class="promo__video" preload="auto" loop="" autoplay="">
-          <source type="video/webm" src="http://utilitynyc.com/wp-content/uploads/2013/09/utility-4.mp4">
-          <source type="video/mp4" src="http://utilitynyc.com/wp-content/uploads/2013/09/utility-4.mp4">
+          <source type="video/webm" src="./video/promo__video.mp4">
+          <source type="video/mp4" src="./video/promo__video.mp4">
         </video>
         <div class="promo__container">
+            <div class="particle-slider">
+                <div id="particle-slider">
+                    <div class="slides">
+                        <div class="slide" data-src="./img/particle-slider/particle-slider.png"></div>
+                    </div>
+                    <canvas class="draw"></canvas>
+                </div>
+            </div>
             <div class="promo__text">
                 <h1>Создаём хорошее и развиваем до лучшего. Боремся за пользу и здравый смысл.</h1>
-                <span>Санкт-Петербург, Москва</span>
+                <span>Москва, Санкт-Петербург</span>
             </div>
         </div>
     </section>
@@ -130,8 +142,8 @@
     <!-- CTA -->
     <section class="cta">
         <div class="cta__container">
-            <h2><strong>Напишите нам на <a href="mailto:infowebord.ru">infowebord.ru</a> или оставьте заявку.</strong> Вместе мы подберём решение и подходящий инструмент</h2>
-            <a href="#">Оставить заявку</a>
+            <h2><strong>Напишите нам на <a href="mailto:info@webord.ru">info@webord.ru</a> или заполните бриф онлайн.</strong> Вместе мы подберём решение и подходящий инструмент</h2>
+            <a href="#" class="btn">Заполнить бриф</a>
         </div>
     </section>
     <!-- CTA END -->
@@ -269,87 +281,16 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__container">
-            <span class="footer__copyright">&copy; 2017 webord.github.io</span>
+            <span class="footer__copyright">&copy; 2017 webord.ru</span>
         </div>
     </footer>
     <!-- FOOTER END -->
 
     <!-- SCRIPTS -->
-    <script>
-var hamburger = document.querySelector(".hamburger"); // .hamburger__active
-var navigation = document.querySelector(".header__navigation");
-
-var navigationClosed = document.querySelector(".header__navigation--closed");
-var navigationOpened = document.querySelector(".header__navigation--opened");
-
-var body = document.querySelector("body");
-var header = document.querySelector(".header");
-
-hamburger.addEventListener("click", function(event) {
-    event.preventDefault();
-
-    if (navigation.classList.contains("header__navigation--closed")) {
-        hamburger.classList.add("hamburger__active");
-        navigation.classList.remove("header__navigation--closed");
-        navigation.classList.add("header__navigation--opened");
-        header.classList.remove("header--bg");
-        body.classList.add("body--fixed");
-    } else {
-        hamburger.classList.remove("hamburger__active");
-        navigation.classList.add("header__navigation--closed");
-        navigation.classList.remove("header__navigation--opened");
-        header.classList.add("header--bg");
-        body.classList.remove("body--fixed");
-    };
-});
-
-
-
-var scrollpos = window.scrollY;
-
-
-function add_class_on_scroll() {
-    header.classList.add("header--bg");
-}
-
-function remove_class_on_scroll() {
-    header.classList.remove("header--bg");
-}
-
-window.addEventListener('scroll', function() {
-    scrollpos = window.scrollY;
-
-    if (scrollpos > 400) {
-        add_class_on_scroll();
-    } else {
-        remove_class_on_scroll();
-    }
-});
-
-
-
-
-
-
-
-
-var hellopreloader = document.getElementById("preloader");
-
-function fadeOutnojquery(el) {
-    el.style.opacity = 1;
-    var interhellopreloader = setInterval(function() {
-        el.style.opacity = el.style.opacity - 0.05;
-        if (el.style.opacity <= 0.05) {
-            clearInterval(interhellopreloader);
-            hellopreloader.style.display = "none";
-        }
-    }, 16);
-}
-window.onload = function() {
-    setTimeout(function() {
-        fadeOutnojquery(hellopreloader);
-    }, 1000);
-};
+    <script src="./js/script.js"></script>
+    <script src="./js/particleslider-current.min.js"></script>
+    <script type="text/javascript">
+var ps = new ParticleSlider();
     </script>
     <!-- SCRIPTS END -->
 

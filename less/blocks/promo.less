@@ -16,10 +16,15 @@
 	.container();
 
 	&__container {
-		@media (min-width: @desktop-widths) {
-			display: flex;
+		display: flex;
+		flex-direction: column;
 
-			justify-content: flex-end;
+		@media (min-width: @tablet-widths) {
+			flex-direction: row;
+
+			align-items: center;
+			align-items: center;
+			justify-content: space-between;
 		}
 	}
 
@@ -38,19 +43,29 @@
 	}
 
 	.promo__text {
-		@media (min-width: @desktop-widths) {
-			width: 50%;
+		width: 100%;
+
+		@media (min-width: @tablet-widths) {
+			width: 47.5%;
 		}
 	}
 
 	h1 {
 		margin-bottom: 20px;
 
-		font-size: 2.5em;
+		font-size: 1.5em;
+
+		@media (min-width: @desktop-widths) {
+			font-size: 2.5em;
+		}
 	}
 
 	span {
 		font-size: 17px;
 		line-height: 24px;
+	}
+
+	p {
+		padding: 0;
 	}
 }
