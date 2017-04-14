@@ -1,0 +1,70 @@
+/* ------------------------------------------ */
+/* CONTACTS BLOCK
+/* ------------------------------------------ */
+.contacts {
+	.light();
+	.container();
+
+	&__container {
+		flex-direction: column;
+	}
+}
+
+.contacts__items {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: space-between;
+
+	@media (min-width: @tablet-widths) {
+		flex-direction: row;
+	}
+}
+
+.contacts__item {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	margin: 15px 0;
+	padding: 15px 15px 30px;
+
+	transition: all 0.2s ease-out;
+	text-align: center;
+
+	border-top: 3px solid #5f6c77;
+	background: #fafafa;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+
+	align-items: center;
+
+	h3 {
+		padding-bottom: 0;
+
+		font-size: 18px;
+	}
+
+	span {
+		color: #999999;
+
+		font-size: 12px;
+		font-weight: normal;
+	}
+
+	p {
+		flex-grow: 1;
+	}
+
+	&:hover {
+		box-shadow: 2px 2px 20px rgba(104, 104, 104, 0.2);
+	}
+
+
+	@media (min-width: @tablet-widths) {
+		margin: 15px 0;
+
+		flex-basis: calc(~"100% / 3 - 15px");
+	}
+}

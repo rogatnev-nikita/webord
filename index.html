@@ -307,6 +307,52 @@
     </section>
     <!-- PROJECTS END -->
 
+    <!-- CONTACTS -->
+    <section class="contacts">
+        <div class="contacts__container">
+            <h2>Остались вопросы?</h2>
+            <p>Не смотря на то, что мы находимся только в Москве и Санкт-Петербурге — это не мешает нам работать с клиентами из любой точки мира. Мы считаем и доказываем на практике, что создавать качественные сайты, на расстоянии возможно!</p>
+
+            <div class="contacts__items">
+                <div class="contacts__item">
+                    <h3>Написать e-mail</h3>
+                    <p>Напишите нам на почту <a href="mailto:info@webord.ru">info@webord.ru</a> и мы обязательно ответим в течении 24 часов.</p>
+                    <a href="mailto:info@webord.ru" class="btn">Написать</a>
+                </div>
+                <div class="contacts__item">
+                    <h3>Контактная форма</h3>
+                    <p>Вы можете задать любой интересующий вас вопрос нашему менеджеру через контактную форму ниже.</p>
+                    <a href="#" class="btn">Заполнить форму</a>
+                </div>
+                <div class="contacts__item">
+                    <h3>Позвонить</h3>
+                    <p>Если вы не любитель писать, то позвоните нам в удобное для вас время по телефону <a href="tel:+74951426500">+7 (495) 142-65-00</a></p>
+                    <a href="tel:+74951426500" class="btn">Позвонить</a>
+                </div>
+            </div>
+
+
+            <form method="post" action="javascript:void(0);" id="contactform" name="contactform" class="contact-form">
+                <div class="input-label">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" name="name" value="" id="name" required="">
+                </div>
+                <div class="input-label">
+                    <label for="email">Ваш email</label>
+                    <input type="email" name="email" value="" id="email" required="">
+                </div>
+                <div class="input-label">
+                    <label for="mess">Сообщение</label>
+                    <textarea name="mess" id="mess" required=""></textarea>
+                </div>
+                <button type="submit" class="submit btn_transparent" id="submit" onclick="sendform();">Отправить</button>
+            </form>
+
+
+        </div>
+    </section>
+    <!-- CONTACTS END -->
+
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__container">

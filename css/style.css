@@ -98,6 +98,7 @@ p {
   padding: 15px 0;
 }
 a {
+  white-space: nowrap;
   text-decoration: none;
   color: #eabf44;
   border-bottom: 1px solid transparent;
@@ -1160,6 +1161,94 @@ a:active {
 }
 .brief h2 {
   font-size: 2em;
+}
+/* ------------------------------------------ */
+/* CONTACTS BLOCK
+/* ------------------------------------------ */
+.contacts {
+  color: rgba(0, 0, 0, 0.5);
+  background: #ffffff;
+}
+.contacts__container {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+@media (min-width: 675px) {
+  .contacts__container {
+    padding: 60px 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts__container {
+    max-width: 1400px;
+    padding: 60px 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts__container > p {
+    width: calc(50% - 15px);
+  }
+}
+.contacts__container {
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.contacts__items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+@media (min-width: 675px) {
+  .contacts__items {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+}
+.contacts__item {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+  margin: 15px 0;
+  padding: 15px 15px 30px;
+  transition: all 0.2s ease-out;
+  text-align: center;
+  border-top: 3px solid #5f6c77;
+  background: #fafafa;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -ms-flex-align: center;
+      align-items: center;
+}
+.contacts__item h3 {
+  padding-bottom: 0;
+  font-size: 18px;
+}
+.contacts__item span {
+  color: #999999;
+  font-size: 12px;
+  font-weight: normal;
+}
+.contacts__item p {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+.contacts__item:hover {
+  box-shadow: 2px 2px 20px rgba(104, 104, 104, 0.2);
+}
+@media (min-width: 675px) {
+  .contacts__item {
+    margin: 15px 0;
+    -ms-flex-preferred-size: calc(100% / 3 - 15px);
+        flex-basis: calc(100% / 3 - 15px);
+  }
 }
 /* ------------------------------------------ */
 /* FOOTER BLOCK
