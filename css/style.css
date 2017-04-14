@@ -497,7 +497,8 @@ a:active {
 /* ------------------------------------------ */
 .particle-slider {
   position: relative;
-  width: 100%;
+  display: none;
+  width: 47.5%;
 }
 .particle-slider:after {
   display: block;
@@ -511,7 +512,7 @@ a:active {
 }
 @media (min-width: 675px) {
   .particle-slider {
-    width: 47.5%;
+    display: block;
   }
 }
 /* ------------------------------------------ */
