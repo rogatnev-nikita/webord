@@ -1,7 +1,4 @@
-# «WEBORD» Digital Agency
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/webord/webord.github.io.svg)](https://greenkeeper.io/)
-[![Build status][travis-image]][travis-url]
+# «WEBORD» Digital Agency [![Build status][travis-image]][travis-url]
 
 ## Project summary
 * High Resolution: Yes
