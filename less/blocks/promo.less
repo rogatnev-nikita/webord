@@ -3,6 +3,7 @@
 /* ------------------------------------------ */
 .promo {
 	position: relative;
+	z-index: 1;
 
 	display: flex;
 	overflow: hidden;
@@ -11,6 +12,9 @@
 	height: 100vh;
 	min-height: 500px;
 	max-height: 100vh;
+
+	background: url(../img/promo/promo__bg.jpg);
+	background-size: cover;
 
 	align-items: center;
 	.container();
@@ -30,9 +34,11 @@
 
 	.promo__video {
 		position: absolute;
-		z-index: -1;
+		z-index: 0;
 		top: 50%;
 		left: 50%;
+
+		display: none;
 
 		width: auto;
 		min-width: 100%;
@@ -40,10 +46,17 @@
 		min-height: 100%;
 
 		transform: translateX(-50%) translateY(-50%);
+
+		@media (min-width: @tablet-widths) {
+			display: block;
+		}
 	}
 
 	.promo__text {
+		z-index: 1;
+
 		width: 100%;
+
 
 		@media (min-width: @tablet-widths) {
 			width: 47.5%;

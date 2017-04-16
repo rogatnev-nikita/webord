@@ -1,0 +1,30 @@
+/* ------------------------------------------ */
+/* CONTACT FORM BLOCK
+/* ------------------------------------------ */
+.contact-form {
+	position: relative;
+
+	align-items: center;
+	.container();
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+
+		@media (min-width: @tablet-widths) {
+			flex-direction: row;
+
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+}
+
+.contact-form__form,
+.contact-form__intro {
+	width: 100%;
+
+	@media (min-width: @tablet-widths) {
+		width: 50%;
+	}
+}
