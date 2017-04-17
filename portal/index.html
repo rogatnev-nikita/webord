@@ -91,7 +91,7 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
                         <li><a href="../vizitka/">Сайты-визитки</a></li>
                         <li><a href="../corporate/">Корпоративные</a></li>
                         <li><a href="../shop/">Интернет-магазины</a></li>
-                        <li><a href="../portal/">Порталы</a></li>
+                        <li><a href="../portal/" class="active">Порталы</a></li>
                     </ul>
                 </nav>
             </div>
@@ -99,11 +99,7 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
         <!-- HEADER END -->
 
         <!-- PROMO -->
-        <section class="promo">
-            <video class="promo__video" preload="auto" loop="" autoplay="">
-          <source type="video/webm" src="../video/promo__video.mp4">
-          <source type="video/mp4" src="../video/promo__video.mp4">
-        </video>
+        <section class="promo promo--portal">
             <div class="promo__container">
                 <div class="particle-slider">
                     <div id="particle-slider">
@@ -114,7 +110,7 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
                     </div>
                 </div>
                 <div class="promo__text">
-                    <h1>РАЗРАБОТКА ПОСАДОЧНЫХ СТРАНИЦ - маленьких сайтов для больших продаж</h1>
+                    <h1>РАЗРАБОТКА ПОРТАЛОВ - громадных сайтов для множества людей</h1>
                     <span>Москва, Санкт-Петербург</span>
                 </div>
             </div>
@@ -124,21 +120,47 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
         <!-- SERVICE ABOUT -->
         <section class="service-about">
             <div class="service-about__container">
-                <h2>Напишите нам на <a href="mailto:info@webord.ru">info@webord.ru</a> или заполните бриф онлайн. Вместе мы подберём решение и подходящий инструмент</h2>
+                <h2>Сайты-порталы</h2>
+                <p>Сайт-портал – это наиболее мощный вид сетевого ресурса, который может быть посвящен как одной теме, так и нескольким, делясь на разные разделы и подразделы с многоуровневой вложенностью.</p>
+                <img src="../img/service-about/service-about__portal.svg">
             </div>
         </section>
         <!-- SERVICE ABOUT -->
 
-        <!-- CTA -->
-        <section class="cta">
-            <div class="cta__container">
-                <h2>Напишите нам на <a href="mailto:info@webord.ru">info@webord.ru</a> или заполните бриф онлайн. Вместе мы подберём решение и подходящий инструмент</h2>
-                <div class="cta__btn">
-                    <a href="#" class="btn">Заполнить бриф</a>
+        <!-- SERVICE MORE -->
+        <section class="service-more">
+            <div class="service-more__container">
+                <h2>Зачем мне cайт-портал?</h2>
+                <p>Цель создания Интернет-портала — привлечение и удержание максимально возможного числа пользователей. Каждый посетитель Интернет-портала должен найти его самым исчерпывающим, самым полным, удобным в поиске необходимых знаний, популярным
+                    и ценным источником самой разной тематической и иной информации, удобным местом общения, площадкой для собственных публикаций.</p>
+
+                <!-- SERVICE MORE ITEMS -->
+                <div class="service-more__items">
+                    <article class="service-more__item">
+                        <h3>Яркий имидж</h3>
+                        <p>«ВАУ - эффект» гарантирован. Товар или услуга будет выделяться среди конкурентов</p>
+                    </article>
+
+                    <article class="service-more__item">
+                        <h3>Интерес к продукту</h3>
+                        <p>Возможность представления товаров лимитированными и уникальными</p>
+                    </article>
+
+                    <article class="service-more__item">
+                        <h3>Повышение лояльности</h3>
+                        <p>Размещение информации о том, что компания обладает целым набором преимуществ</p>
+                    </article>
+
+                    <article class="service-more__item">
+                        <h3>Клиентскую базу</h3>
+                        <p>Благодаря формированию клиентской базы из контактной формы можно увеличить продажи</p>
+                    </article>
                 </div>
+                <!-- SERVICE MORE ITEMS END -->
+
             </div>
         </section>
-        <!-- CTA END -->
+        <!-- SERVICE MORE END -->
 
         <!-- MORE -->
         <section class="more">
@@ -195,6 +217,17 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
             </div>
         </section>
         <!-- MORE END -->
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="cta__container">
+                <h2>Напишите нам на <a href="mailto:info@webord.ru">info@webord.ru</a> или заполните бриф онлайн. Вместе мы подберём решение и подходящий инструмент</h2>
+                <div class="cta__btn">
+                    <a href="./brief/" class="btn">Заполнить бриф</a>
+                </div>
+            </div>
+        </section>
+        <!-- CTA END -->
 
         <!-- CONTACTS -->
         <section class="contacts">
