@@ -19,7 +19,6 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
         <meta itemprop="name" content="Создание сайтов | «WEBORD» Digital Agency">
         <meta itemprop="description" content="Мы умеем разрабатывать интерфейсы и посадочные, пойдём на эксперимент и с той же хваткой возьмёмся за типовую задачу. Дело не в этом. Для успеха агентского опыта мало — нужны ваши знания. Участвуйте, доверяйте, и всё получится.">
         <meta itemprop="image" content="../img/og/og.jpg">
-        <meta itemprop="image" content="../img/og/og-2.jpg">
         <!-- SHEMA.ORG MARKUP END -->
 
         <!-- TWITTER CARD DATA -->
@@ -34,6 +33,7 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://webord.ru/" />
         <meta property="og:image" content="../img/og/og.jpg" />
+        <meta property="og:image" content="../img/og/og-2.jpg" />
         <meta property="og:description" content="Мы умеем разрабатывать интерфейсы и посадочные, пойдём на эксперимент и с той же хваткой возьмёмся за типовую задачу. Дело не в этом. Для успеха агентского опыта мало — нужны ваши знания. Участвуйте, доверяйте, и всё получится."
         />
         <!-- OPEN GRAPH DATA END-->
