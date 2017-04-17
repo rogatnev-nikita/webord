@@ -285,7 +285,6 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
         </section>
         <!-- CONTACT FORM END -->
 
-
         <!-- FOOTER -->
         <footer class="footer">
             <div class="footer__container">
@@ -301,6 +300,13 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
         <script type="text/javascript">
 var ps = new ParticleSlider();
         </script>
+
+        <!-- For File Upload -->
+        <script src="../js/jquery.knob.js"></script>
+        <script src="../js/jquery.ui.widget.js"></script>
+        <script src="../js/jquery.iframe-transport.js"></script>
+        <script src="../js/jquery.fileupload.js"></script>
+        <script src="../js/all.js"></script>
         <!-- SCRIPTS END -->
 
     </body>

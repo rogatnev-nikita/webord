@@ -1518,10 +1518,15 @@ textarea:focus {
 /* ------------------------------------------ */
 .alert-block {
   display: block;
+  margin: 15px 0;
+  padding: 0 15px;
   color: #ffffff;
 }
 .alert-block--error {
   background: red;
+}
+.alert-block--success {
+  background: green;
 }
 /* ------------------------------------------ */
 /* FOOTER BLOCK

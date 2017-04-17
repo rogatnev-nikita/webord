@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-/* 
+/*
  * Setting
  */
 
@@ -48,129 +48,129 @@ $radio_design = $_REQUEST['radio_design'];
 $type_group = $_REQUEST['type_group'];
 
 if (!$type_group):
-	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Что вы хотите сделать</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Что вы хотите сделать</p></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
 		'body' => $body
-	)));	
-	
+	)));
+
 endif;
 
 $cost_group = $_REQUEST['cost_group'];
 
 if (!$cost_group):
-	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Стоимость</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Стоимость</p></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
 		'body' => $body
-	)));	
-	
+	)));
+
 endif;
 
 $date_group = $_REQUEST['date_group'];
 
 if (!$date_group):
-	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Срок исполнения</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Срок исполнения</p></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
 		'body' => $body
-	)));	
-	
+	)));
+
 endif;
 
 if ((!$_REQUEST['good_project_1']) && (!$_REQUEST['good_project_2']) && (!$_REQUEST['good_project_3']) && (!$_REQUEST['good_project_4']) && (!$_REQUEST['good_project_5'])):
-	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Укажите примеры сайтов, которые нравятся</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Укажите примеры сайтов, которые нравятся</p></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
 		'body' => $body
 	)));
-	
+
 endif;
 
 if ((!$_REQUEST['bad_project_1']) && (!$_REQUEST['bad_project_2']) && (!$_REQUEST['bad_project_3']) && (!$_REQUEST['bad_project_4']) && (!$_REQUEST['bad_project_5'])):
-	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Укажите примеры сайтов, которые не нравятся</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Укажите примеры сайтов, которые не нравятся</p></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
 		'body' => $body
 	)));
-	
+
 endif;
 
 if ((!$_REQUEST['same_project_1']) && (!$_REQUEST['same_project_2']) && (!$_REQUEST['same_project_3']) && (!$_REQUEST['same_project_4']) && (!$_REQUEST['same_project_5'])):
-	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Укажите аналогичные сайты</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Укажите аналогичные сайты</p></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
 		'body' => $body
 	)));
-	
+
 endif;
 
 $services_group = $_REQUEST['services_group'];
 if (!$services_group):
-	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Функциональность</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
-	die(json_encode(array(
-		'status' => 0,
-		'body' => $body
-	)));	
-	
-endif;
-
-$platforms_group = $_REQUEST['platforms_group'];
-if (!$platforms_group):
-	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Систему управления содержимым</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
-
-	die(json_encode(array(
-		'status' => 0,
-		'body' => $body
-	)));	
-	
-endif;
-
-$other_group = $_REQUEST['other_group'];
-if (!$other_group):
-	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Дополнительные услуги</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Функциональность</p></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
 		'body' => $body
 	)));
-	
+
+endif;
+
+$platforms_group = $_REQUEST['platforms_group'];
+if (!$platforms_group):
+
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Систему управления содержимым</p></div></div>";
+
+	die(json_encode(array(
+		'status' => 0,
+		'body' => $body
+	)));
+
+endif;
+
+$other_group = $_REQUEST['other_group'];
+if (!$other_group):
+
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Дополнительные услуги</p></div></div>";
+
+	die(json_encode(array(
+		'status' => 0,
+		'body' => $body
+	)));
+
 endif;
 
 $name = trim($_REQUEST["name"]);
 $name = strip_tags($name);
 if (mb_strlen($name, "utf-8") <= 0):
-	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Заполните поле Ваше имя</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Заполните поле Ваше имя</p></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
 		'body' => $body
 	)));
-	
+
 endif;
 
 $mail = trim($_REQUEST["mail"]);
 $mail = strip_tags($mail);
 if (!filter_var($mail, FILTER_VALIDATE_EMAIL)):
 
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Неверно заполнено поле Ваш email</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Неверно заполнено поле Ваш email</p></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -183,26 +183,26 @@ $company = trim($_REQUEST["company"]);
 $company = strip_tags($company);
 if (mb_strlen($company, "utf-8") <= 0):
 
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Заполните поле Компания</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Заполните поле Компания</p></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
 		'body' => $body
 	)));
-	
+
 endif;
 
 $position = trim($_REQUEST["position"]);
 $position = strip_tags($position);
 if (mb_strlen($position, "utf-8") <= 0):
 
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Заполните поле Должность</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Заполните поле Должность</p></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
 		'body' => $body
 	)));
-	
+
 endif;
 
 
@@ -210,26 +210,26 @@ $tel = trim($_REQUEST["tel"]);
 $tel = strip_tags($tel);
 if (mb_strlen($tel, "utf-8") <= 0):
 
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Заполните поле Телефон</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Заполните поле Телефон</p></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
 		'body' => $body
 	)));
-	
+
 endif;
 
 $skype = trim($_REQUEST["skype"]);
 $skype = strip_tags($skype);
 if (mb_strlen($skype, "utf-8") <= 0):
 
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Заполните поле Skype</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Заполните поле Skype</p></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
 		'body' => $body
 	)));
-	
+
 endif;
 
 $done_body = "
@@ -246,7 +246,7 @@ $done_body = "
 	<b>Срок выполнения</b>: ".$date_group."<br />
 	<b>Функциональность</b>: ".implode(', ', $services_group)."<br />
 	<b>CMS</b>: ".$platforms_group."<br />
-	<b>Дополнительные услуги</b>: ".implode(', ', $other_group)."<br />	
+	<b>Дополнительные услуги</b>: ".implode(', ', $other_group)."<br />
 	<b>Техническое задание</b>: ".($radio_tz=='да'? 'Да. Прикреплено' : 'Нет')."<br />
 	<b>Понадобится дизайн</b>: ".($radio_design=='да'? 'Да' : 'Нет. Прикреплено')."<br />
 	<b>Примеры (нравятся): </b> ".$_REQUEST['good_project_1']." ".$_REQUEST['good_project_2']." ".$_REQUEST['good_project_3']." ".$_REQUEST['good_project_4']." ".$_REQUEST['good_project_5']."<br />
@@ -260,10 +260,10 @@ $mail = new PHPMailer();
 
 $mail->IsSMTP();
 $mail->CharSet = 'utf-8';
-$mail->Host = SMTP_HOST; 
+$mail->Host = SMTP_HOST;
 $mail->SMTPAuth = true;
 $mail->SMTPSecure = 'ssl';
-$mail->Port = 465;		
+$mail->Port = 465;
 $mail->Username = SMTP_USERNAME;
 $mail->Password = SMTP_PASSWORD;
 $mail->From = SMTP_FROM;
@@ -290,15 +290,15 @@ if ($radio_design == 'нет') {
 }
 
 if ($mail->Send()) {
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--success'><p>Заяка успешно отправлена</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--success'><p>Заяка успешно отправлена</p></div></div>";
 
 	die(json_encode(array(
 		'status' => 1,
 		'body' => $body
 	)));
 } else {
-	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Произошлка ошибка. Обратитесь к системному администратору</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Произошлка ошибка. Обратитесь к системному администратору</p></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -323,7 +323,7 @@ die;
 if (isset($_REQUEST["action"])):
     if ($_REQUEST["action"] == "sendorderform"):
         $e1   = null;
-        
+
         $AllowedExtensions = ["pdf","doc","docx","gif","jpeg","jpg","png","rtf","txt"];
         $files = [];
         $server_file = [];
@@ -338,16 +338,16 @@ if (isset($_REQUEST["action"])):
             }
             for($i = 0; $i<count($file_temp); $i++) { move_uploaded_file($file_temp[$i], $server_file[$i]); }
         }
-        
-        
+
+
         parse_str($_REQUEST['msgorder'], $msgorder);
-        
+
 
         $other_group = $msgorder['how_group'];
         $services_group = $msgorder['services_group'];
         $other_group = $msgorder['other_group'];
-        
-        
+
+
         $type_group = $_REQUEST['type_group'];
         $cost_group = $_REQUEST['cost_group'];
         $date_group = $_REQUEST['date_group'];
@@ -374,7 +374,7 @@ if (isset($_REQUEST["action"])):
         $same_project_5 = trim($_REQUEST["same_project_5"]);
 
         $platforms_group = $_REQUEST['platforms_group'];
-        
+
         $name = trim($_REQUEST["name"]);
         $company = trim($_REQUEST["company"]);
         $position = trim($_REQUEST["position"]);
@@ -382,23 +382,23 @@ if (isset($_REQUEST["action"])):
         $tel = trim($_REQUEST["tel"]);
         $skype = trim($_REQUEST["skype"]);
         $mess_order = trim($_REQUEST["mess_order"]);
-        
+
         if ($e1 == null):
-        
+
             $email  = "info@webord.ru";
             $title = "Order form from PIXEL";
             $headers = "From: $mail";
             $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\"";
             $semi_rand = md5(time());
             $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
-            
-        
+
+
             $message = "Как: $how_group\n Тип сайта: $type_group\n Стоимость: $cost_group\n Срок выполнения: $date_group\n Техническое задание: $radio_tz\n Дизайн: $radio_design\n Нравится: $good_project_1, $good_project_2, $good_project_3, $good_project_4, $good_project_5\n Не нравится: $bad_project_1, $bad_project_2, $bad_project_3, $bad_project_4, $bad_project_5\n Аналогичные: $same_project_1, $same_project_2, $same_project_3, $same_project_4, $same_project_5\n Функциональность: $services_group, \n Система управления содержимым: $platforms_group\n Дополнительные услуги: $other_group, \n ФИО: $name\n Компания: $company\n Должность: $position\n E-mail: $mail\n Телефон: $tel\n Скайп: $skype\n Напишите всё, что считаете нужным: $mess_order\n\n";
 
 
             $message .= "This is a multi-part message in MIME format.\n\n" . "--{$mime_boundary}\n"
-               . "Content-Type: text/plain; charset=\"iso-8859-1\"\n" . 
-                 "Content-Transfer-Encoding: 7bit\n\n" . $message . "\n\n"; 
+               . "Content-Type: text/plain; charset=\"iso-8859-1\"\n" .
+                 "Content-Transfer-Encoding: 7bit\n\n" . $message . "\n\n";
             $message .= "--{$mime_boundary}\n";
 
             for($x=0;$x<count($files);$x++){
@@ -406,16 +406,16 @@ if (isset($_REQUEST["action"])):
             $data = fread($file,filesize($files[$x]));
             fclose($file);
             $data = chunk_split(base64_encode($data));
-            $message .= "Content-Type: {\"application/octet-stream\"};\n" .  
+            $message .= "Content-Type: {\"application/octet-stream\"};\n" .
 
-                        " name=\"$files[$x]\"\n" . 
-            "Content-Disposition: attachment;\n" . " filename=\"$files[$x]\"\n" . 
+                        " name=\"$files[$x]\"\n" .
+            "Content-Disposition: attachment;\n" . " filename=\"$files[$x]\"\n" .
             "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
             $message .= "--{$mime_boundary}\n";
     }
 
-            
-  
+
+
             mail($email, $title, $message, $headers);
 
             echo "<script>$('#order_form').trigger('reset');</script>";

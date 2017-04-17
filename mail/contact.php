@@ -6,21 +6,21 @@ if (isset($_POST["action"])):
         $name = strip_tags($name);
         if (mb_strlen($name, "utf-8") <= 0):
             $e1 .= "1";
-            print "<div class=\"alert-mess\"><div class='alert-block alert-block--error'><p>Заполните поле 'Ваше имя'</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div></div>";
+            print "<div class=\"alert-mess\"><div class='alert-block alert-block--error'><p>Заполните поле 'Ваше имя'</p></div></div></div>";
         endif;
 
         $email = trim($_POST["email"]);
         $email = strip_tags($email);
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)):
             $e1 .= "1";
-            print "<div class=\"alert-mess\"><div class='alert-block alert-block--error'><p>Неверно заполнено поле 'Ваш email'</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+            print "<div class=\"alert-mess\"><div class='alert-block alert-block--error'><p>Неверно заполнено поле 'Ваш email'</p></div></div>";
         endif;
 
         $mess = trim($_POST["mess"]);
         $mess = strip_tags($mess);
         if (mb_strlen($mess, "utf-8") <= 0):
             $e1 .= "1";
-            print "<div class=\"alert-mess\"><div class='alert-block alert-block--error'><p>Заполните поле 'Cообщение'</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+            print "<div class=\"alert-mess\"><div class='alert-block alert-block--error'><p>Заполните поле 'Cообщение'</p></div></div>";
 
 
         endif;
@@ -45,7 +45,7 @@ if (isset($_POST["action"])):
             mail($mail, $title, $message, $headers);
 
             echo "<script>$('#contactform').trigger('reset');</script>";
-            print "<div class=\"alert-mess\"><div class='alert-block alert-block--success'><p>Ваше сообщение отправлено! Спасибо!</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+            print "<div class=\"alert-mess\"><div class='alert-block alert-block--success'><p>Ваше сообщение отправлено! Спасибо!</p></div></div>";
         endif;
     else:
         die;
