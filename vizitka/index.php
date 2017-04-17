@@ -224,7 +224,7 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
             <div class="cta__container">
                 <h2>Напишите нам на <a href="mailto:info@webord.ru">info@webord.ru</a> или заполните бриф онлайн. Вместе мы подберём решение и подходящий инструмент</h2>
                 <div class="cta__btn">
-                    <a href="./brief/" class="btn">Заполнить бриф</a>
+                    <a href="../brief/" class="btn">Заполнить бриф</a>
                 </div>
             </div>
         </section>

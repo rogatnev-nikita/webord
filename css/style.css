@@ -990,6 +990,7 @@ textarea:focus {
 }
 .clients__item {
   width: 100%;
+  height: auto;
 }
 @media (min-width: 675px) {
   .clients__item {
@@ -1355,6 +1356,7 @@ textarea:focus {
 }
 .contact-form__form,
 .contact-form__intro {
+  z-index: 1;
   width: 100%;
 }
 @media (min-width: 675px) {
