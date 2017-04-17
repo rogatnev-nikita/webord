@@ -12,5 +12,5 @@
 	npm i  
 	npm run build
 
-[travis-image]: https://travis-ci.org/webord/webord.github.io.svg?branch=master
-[travis-url]: https://travis-ci.org/webord/webord.github.io
+[travis-image]: https://travis-ci.org/webord/webord.ru.svg?branch=master
+[travis-url]: https://travis-ci.org/webord/webord.ru

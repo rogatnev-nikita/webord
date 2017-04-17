@@ -1,32 +1,29 @@
 {
-  "name": "webord.github.io",
-  "version": "0.1.0",
-  "description": "webord.github.io",
-  "author": "Rogatnev Nikita",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:rogatnev-nikita/webord.github.io.git"
-  },
-  "bugs": {
-    "url": "https://github.com/rogatnev-nikita/webord.github.io/issues"
-  },
-  "homepage": "https://github.com/rogatnev-nikita/webord.github.io",
-  "devDependencies": {
-    "autoprefixer": "^6.3.0",
-    "cssnano": "^3.0.0",
-    "editorconfig-tools": "^0.1.1",
-    "grunt": "^1.0.1",
-    "grunt-contrib-less": "^1.3.0",
-    "grunt-contrib-uglify": "^2.3.0",
-    "grunt-cssnano": "^2.0.0",
-    "grunt-postcss": "^0.8.0"
-  },
-  "scripts": {
-    "test": "editorconfig-tools check *",
-    "build": "grunt less && grunt postcss",
-    "start": "npm run build && grunt serve"
-  },
-  "engines": {
-    "node": "^5.11"
-  }
+    "name": "webord.ru",
+    "version": "0.1.0",
+    "description": "«WEBORD» Digital Agency [http://webord.ru]",
+    "author": "Rogatnev Nikita",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:webord/webord.ru.git"
+    },
+    "homepage": "http://webord.ru",
+    "devDependencies": {
+        "autoprefixer": "^6.3.0",
+        "cssnano": "^3.0.0",
+        "editorconfig-tools": "^0.1.1",
+        "grunt": "^1.0.1",
+        "grunt-contrib-less": "^1.3.0",
+        "grunt-contrib-uglify": "^2.3.0",
+        "grunt-cssnano": "^2.0.0",
+        "grunt-postcss": "^0.8.0"
+    },
+    "scripts": {
+        "test": "editorconfig-tools check *",
+        "build": "grunt less && grunt postcss",
+        "start": "npm run build && grunt serve"
+    },
+    "engines": {
+        "node": "^5.11"
+    }
 }
