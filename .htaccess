@@ -1,0 +1,10 @@
+# Cgarser
+AddDefaultCharset UTF-8
+
+# Redirect to WWW
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
+
+# Disable server signature
+ServerSignature Off
