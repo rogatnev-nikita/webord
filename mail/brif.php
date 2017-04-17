@@ -49,7 +49,7 @@ $type_group = $_REQUEST['type_group'];
 
 if (!$type_group):
 	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-red b-radius b-shadow'><p>Выберите Что вы хотите сделать</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Что вы хотите сделать</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -62,7 +62,7 @@ $cost_group = $_REQUEST['cost_group'];
 
 if (!$cost_group):
 	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-red b-radius b-shadow'><p>Выберите Стоимость</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Стоимость</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -75,7 +75,7 @@ $date_group = $_REQUEST['date_group'];
 
 if (!$date_group):
 	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-red b-radius b-shadow'><p>Выберите Срок исполнения</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Срок исполнения</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -86,7 +86,7 @@ endif;
 
 if ((!$_REQUEST['good_project_1']) && (!$_REQUEST['good_project_2']) && (!$_REQUEST['good_project_3']) && (!$_REQUEST['good_project_4']) && (!$_REQUEST['good_project_5'])):
 	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-red b-radius b-shadow'><p>Укажите примеры сайтов, которые нравятся</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Укажите примеры сайтов, которые нравятся</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -97,7 +97,7 @@ endif;
 
 if ((!$_REQUEST['bad_project_1']) && (!$_REQUEST['bad_project_2']) && (!$_REQUEST['bad_project_3']) && (!$_REQUEST['bad_project_4']) && (!$_REQUEST['bad_project_5'])):
 	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-red b-radius b-shadow'><p>Укажите примеры сайтов, которые не нравятся</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Укажите примеры сайтов, которые не нравятся</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -108,7 +108,7 @@ endif;
 
 if ((!$_REQUEST['same_project_1']) && (!$_REQUEST['same_project_2']) && (!$_REQUEST['same_project_3']) && (!$_REQUEST['same_project_4']) && (!$_REQUEST['same_project_5'])):
 	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-red b-radius b-shadow'><p>Укажите аналогичные сайты</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Укажите аналогичные сайты</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -120,7 +120,7 @@ endif;
 $services_group = $_REQUEST['services_group'];
 if (!$services_group):
 	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-red b-radius b-shadow'><p>Выберите Функциональность</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Функциональность</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -132,7 +132,7 @@ endif;
 $platforms_group = $_REQUEST['platforms_group'];
 if (!$platforms_group):
 	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-red b-radius b-shadow'><p>Выберите Систему управления содержимым</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Систему управления содержимым</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -144,7 +144,7 @@ endif;
 $other_group = $_REQUEST['other_group'];
 if (!$other_group):
 	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-red b-radius b-shadow'><p>Выберите Дополнительные услуги</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Выберите Дополнительные услуги</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -157,7 +157,7 @@ $name = trim($_REQUEST["name"]);
 $name = strip_tags($name);
 if (mb_strlen($name, "utf-8") <= 0):
 	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-red b-radius b-shadow'><p>Заполните поле Ваше имя</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Заполните поле Ваше имя</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -170,7 +170,7 @@ $mail = trim($_REQUEST["mail"]);
 $mail = strip_tags($mail);
 if (!filter_var($mail, FILTER_VALIDATE_EMAIL)):
 
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-red b-radius b-shadow'><p>Неверно заполнено поле Ваш email</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Неверно заполнено поле Ваш email</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -183,7 +183,7 @@ $company = trim($_REQUEST["company"]);
 $company = strip_tags($company);
 if (mb_strlen($company, "utf-8") <= 0):
 
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-red b-radius b-shadow'><p>Заполните поле Компания</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Заполните поле Компания</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -196,7 +196,7 @@ $position = trim($_REQUEST["position"]);
 $position = strip_tags($position);
 if (mb_strlen($position, "utf-8") <= 0):
 
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-red b-radius b-shadow'><p>Заполните поле Должность</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Заполните поле Должность</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -210,7 +210,7 @@ $tel = trim($_REQUEST["tel"]);
 $tel = strip_tags($tel);
 if (mb_strlen($tel, "utf-8") <= 0):
 
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-red b-radius b-shadow'><p>Заполните поле Телефон</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Заполните поле Телефон</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -223,7 +223,7 @@ $skype = trim($_REQUEST["skype"]);
 $skype = strip_tags($skype);
 if (mb_strlen($skype, "utf-8") <= 0):
 
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-red b-radius b-shadow'><p>Заполните поле Skype</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Заполните поле Skype</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
@@ -290,7 +290,7 @@ if ($radio_design == 'нет') {
 }
 
 if ($mail->Send()) {
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-green b-radius b-shadow'><p>Заяка успешно отправлена</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--success'><p>Заяка успешно отправлена</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 1,
@@ -298,7 +298,7 @@ if ($mail->Send()) {
 	)));
 } else {
 	
-	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block bg-red b-radius b-shadow'><p>Произошлка ошибка. Обратитесь к системному администратору</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
+	$body = "<div class=\"alert-mess\"><div class='alert-block alert-block alert-block--error'><p>Произошлка ошибка. Обратитесь к системному администратору</p><span class='fa fa-times-circle-o' onclick='$(this).parent().hide();'></span></div></div>";
 
 	die(json_encode(array(
 		'status' => 0,
