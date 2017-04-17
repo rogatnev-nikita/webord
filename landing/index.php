@@ -11,7 +11,7 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>Создание сайтов | «WEBORD» Digital Agency</title>
+        <title>РАЗРАБОТКА ПОСАДОЧНЫХ СТРАНИЦ | «WEBORD» Digital Agency</title>
         <meta name="description" content="Мы умеем разрабатывать интерфейсы и посадочные, пойдём на эксперимент и с той же хваткой возьмёмся за типовую задачу. Дело не в этом. Для успеха агентского опыта мало — нужны ваши знания. Участвуйте, доверяйте, и всё получится.">
         <meta name="keywords" content="">
 
@@ -309,6 +309,11 @@ var ps = new ParticleSlider();
         <script src="../js/jquery.iframe-transport.js"></script>
         <script src="../js/jquery.fileupload.js"></script>
     		<script src="../js/all.js"></script>
+
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+        (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44248524 = new Ya.Metrika({ id:44248524, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+        </script>
         <!-- SCRIPTS END -->
 
     </body>
