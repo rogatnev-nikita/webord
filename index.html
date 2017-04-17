@@ -87,12 +87,12 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
             </button>
                 <nav class="header__navigation header__navigation--closed">
                     <ul>
-                      <li><a href="./landing/">Лендинги</a></li>
-                      <li><a href="./promo/">Промо-сайты</a></li>
-                      <li><a href="./vizitka/">Сайты-визитки</a></li>
-                      <li><a href="./corporate/">Корпоративные</a></li>
-                      <li><a href="./shop/">Интернет-магазины</a></li>
-                      <li><a href="./portal/">Порталы</a></li>
+                        <li><a href="./landing/">Лендинги</a></li>
+                        <li><a href="./promo/">Промо-сайты</a></li>
+                        <li><a href="./vizitka/">Сайты-визитки</a></li>
+                        <li><a href="./corporate/">Корпоративные</a></li>
+                        <li><a href="./shop/">Интернет-магазины</a></li>
+                        <li><a href="./portal/">Порталы</a></li>
                     </ul>
                 </nav>
             </div>
@@ -303,9 +303,12 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
 
                 <!-- PROJECTS ITEMS -->
                 <div class="projects__items">
-                    <article class="projects__item">
-                        12
-                    </article>
+                    <a href="http://putcar.ru/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--1.png" alt="projects item" width="540"></a>
+                    <a href="http://vocord.ru/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--2.png" alt="projects item" width="540"></a>
+                    <a href="https://airbnbopen.com/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--3.png" alt="projects item" width="540"></a>
+                    <a href="http://positivecommunications.ru/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--4.png" alt="projects item" width="540"></a>
+                    <a href="http://xn----htbbcp8br.xn--p1ai/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--5.png" alt="projects item" width="540"></a>
+                    <a href="http://sheridan.pro/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--6.png" alt="projects item" width="540"></a>
                 </div>
                 <!-- PROJECTS ITEMS END -->
 
@@ -344,7 +347,6 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
         <!-- CONTACT FORM -->
         <section class="contact-form" id="contact-form">
             <div class="contact-form__container">
-
                 <div class="contact-form__intro">
                     <h2>Напишите нам</h2>
                     <div class="logo">
@@ -364,7 +366,6 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
                     <button type="submit" class="btn" id="submit" onclick="sendform();">Отправить</button>
                     <div class="divError" id="error"></div>
                 </form>
-
             </div>
         </section>
         <!-- CONTACT FORM END -->
@@ -390,11 +391,37 @@ var ps = new ParticleSlider();
         <script src="./js/jquery.ui.widget.js"></script>
         <script src="./js/jquery.iframe-transport.js"></script>
         <script src="./js/jquery.fileupload.js"></script>
-    		<script src="./js/all.js"></script>
+        <script src="./js/all.js"></script>
 
         <!-- Yandex.Metrika counter -->
         <script type="text/javascript">
-        (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44248524 = new Ya.Metrika({ id:44248524, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+(function(d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter44248524 = new Ya.Metrika({
+                id: 44248524,
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true,
+                trackHash: true
+            });
+        } catch (e) {}
+    });
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function() {
+            n.parentNode.insertBefore(s, n);
+        };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else {
+        f();
+    }
+})(document, window, "yandex_metrika_callbacks");
         </script>
         <!-- SCRIPTS END -->
 

@@ -16,14 +16,54 @@
 	flex-wrap: wrap;
 
 	@media (min-width: @tablet-widths) {
+		display: block;
+
+		column-count: 3;
+	}
+
+	@media (min-width: @desktop-widths) {
+		display: flex;
+
 		flex-wrap: nowrap;
+		column-count: 0;
 	}
 }
 
 .projects__item {
-	width: 100%;
+	display: block;
 
-	@media (min-width: @tablet-widths) {
-		max-width: 50%;
+	width: 100%;
+	margin-top: 15px;
+
+	text-decoration: none;
+
+	border: 0;
+	outline: none;
+
+	line-height: 0;
+
+	&:hover,
+	&:active {
+		text-decoration: none;
+
+		border: 0;
+		outline: none;
+
+		line-height: 0;
+	}
+
+	img {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+
+	@media (min-width: @desktop-widths) {
+		width: auto;
+		margin: 15px 15px 0 0;
+
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 }
