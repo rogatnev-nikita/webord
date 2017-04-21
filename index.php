@@ -303,12 +303,14 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
 
                 <!-- PROJECTS ITEMS -->
                 <div class="projects__items">
-                    <a href="http://putcar.ru/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--1.png" alt="projects item" width="540"></a>
-                    <a href="http://vocord.ru/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--2.png" alt="projects item" width="540"></a>
-                    <a href="https://airbnbopen.com/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--3.png" alt="projects item" width="540"></a>
-                    <a href="http://positivecommunications.ru/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--4.png" alt="projects item" width="540"></a>
-                    <a href="http://xn----htbbcp8br.xn--p1ai/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--5.png" alt="projects item" width="540"></a>
-                    <a href="http://sheridan.pro/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--6.png" alt="projects item" width="540"></a>
+                    <a href="http://putcar.ru/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--1__preview.png" alt="projects item" width="540"></a>
+                    <a href="http://vocord.ru/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--2__preview.png" alt="projects item" width="540"></a>
+                    <a href="https://airbnbopen.com/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--3__preview.png" alt="projects item" width="540"></a>
+                    <a href="http://positivecommunications.ru/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--4__preview.png" alt="projects item" width="540"></a>
+                    <a href="http://xn----htbbcp8br.xn--p1ai/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--5__preview.png" alt="projects item" width="540"></a>
+                    <a href="http://sheridan.pro/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--6__preview.png" alt="projects item" width="540"></a>
+                    <a href="https://eventgrid.com" target="_blank" class="projects__item"><img src="./img/projects/projects__item--7__preview.png" alt="projects item" width="540"></a>
+                    <a href="https://grubcrawl.com" target="_blank" class="projects__item"><img src="./img/projects/projects__item--8__preview.png" alt="projects item" width="540"></a>
                 </div>
                 <!-- PROJECTS ITEMS END -->
 
