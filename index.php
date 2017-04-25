@@ -303,14 +303,16 @@ $_SESSION['guid'] = substr(preg_replace('/[^A-Za-z]/',null,crypt(time()).crypt(t
 
                 <!-- PROJECTS ITEMS -->
                 <div class="projects__items">
-                    <a href="http://putcar.ru/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--1__preview.png" alt="projects item" width="540"></a>
-                    <a href="http://vocord.ru/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--2__preview.png" alt="projects item" width="540"></a>
-                    <a href="https://airbnbopen.com/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--3__preview.png" alt="projects item" width="540"></a>
-                    <a href="http://positivecommunications.ru/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--4__preview.png" alt="projects item" width="540"></a>
-                    <a href="http://xn----htbbcp8br.xn--p1ai/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--5__preview.png" alt="projects item" width="540"></a>
-                    <a href="http://sheridan.pro/" target="_blank" class="projects__item"><img src="./img/projects/projects__item--6__preview.png" alt="projects item" width="540"></a>
-                    <a href="https://eventgrid.com" target="_blank" class="projects__item"><img src="./img/projects/projects__item--7__preview.png" alt="projects item" width="540"></a>
-                    <a href="https://grubcrawl.com" target="_blank" class="projects__item"><img src="./img/projects/projects__item--8__preview.png" alt="projects item" width="540"></a>
+                    <a href="http://putcar.ru/" target="_blank" class="projects__item"><img src="./img/projects/putcar.ru--preview.png" alt="projects item" width="540"></a>
+                    <a href="http://vocord.ru/" target="_blank" class="projects__item"><img src="./img/projects/vocord.ru--preview.png" alt="projects item" width="540"></a>
+                    <a href="https://airbnbopen.com/" target="_blank" class="projects__item"><img src="./img/projects/airbnbopen.com--preview.png" alt="projects item" width="540"></a>
+                    <a href="http://positivecommunications.ru/" target="_blank" class="projects__item"><img src="./img/projects/positivecommunications.ru--preview.png" alt="projects item" width="540"></a>
+                    <a href="http://xn----htbbcp8br.xn--p1ai/" target="_blank" class="projects__item"><img src="./img/projects/ер-дети.рф--preview.png" alt="projects item" width="540"></a>
+                    <a href="http://sheridan.pro/" target="_blank" class="projects__item"><img src="./img/projects/sheridan.pro--preview.png" alt="projects item" width="540"></a>
+                    <a href="https://eventgrid.com" target="_blank" class="projects__item"><img src="./img/projects/eventgrid--preview.png" alt="projects item" width="540"></a>
+                    <a href="https://grubcrawl.com" target="_blank" class="projects__item"><img src="./img/projects/grub--preview.png" alt="projects item" width="540"></a>
+                    <a href="http://artix.studio" target="_blank" class="projects__item"><img src="./img/projects/artix.studio--preview.png " alt="projects item" width="540"></a>
+                    <a href="http://www.olesya-tattoo.ru" target="_blank" class="projects__item"><img src="./img/projects/olesya-tattoo.ru--preview.png" alt="projects item" width="540"></a>
                 </div>
                 <!-- PROJECTS ITEMS END -->
 
